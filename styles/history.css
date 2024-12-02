@@ -1,0 +1,89 @@
+/* GLOBALS */
+
+
+
+/* HERO */
+
+.hero-bg {
+	background-image: url(../images/be-history.png);
+}
+
+.hero-text-1 {
+	padding-bottom: 90px;
+}
+
+
+
+/* TIMELINE */
+
+.timeline-grid {
+	display: grid;
+	grid-template: auto / 1fr 6fr;
+	background-color: #04387C;
+	border-radius: 20px;
+	margin-top: 60px;
+}
+
+.our-timeline {
+	color: white;
+	font-weight: 600;
+	font-size: 20px;
+	justify-self: center;
+	align-self: center;
+}
+
+.dates-grid {
+	display: grid;
+	grid-template: auto / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.timeline-rectangle {
+	width: 40px;
+	height: 10px;
+	background: #A2BFE4;
+	border-radius: 15px;
+	align-self: center;
+	justify-self: center;
+	margin-right: 35px;
+}
+
+.timeline-dates {
+	color: black;
+	background: white;
+	height: 40px;
+	width: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 24px;
+	border-radius: 10px;
+}
+
+
+
+/* LOOKING FORWARD */
+
+.looking-forward {
+	background-image: url(../images/history-forward.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+	height: 400px;
+	padding-top: 1px;
+	padding-left: 40px;
+	margin: 100px 0px;
+
+}
+
+.looking-forward h3 {
+	color: white;
+	//background-color: green;
+}
+
+.looking-forward p {
+	color: white;
+	//background-color: pink;
+	width: 400px;
+	margin-top: -50px;
+}
