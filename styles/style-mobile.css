@@ -1,0 +1,72 @@
+/* NON-MOBILE */
+
+
+
+/* PHONE SCREEN */
+
+@media screen and (max-width: 480px) {
+
+
+
+	/* GLOBALS */
+
+	.hidden-mobile {
+        display: none;
+    }
+    .hidden-desktop {
+        display: flex;
+    }
+
+    .margin-default {
+        margin: 0 24px;
+    }
+
+    h1 {
+    	font-size: 32px;
+    }
+
+    h2 {
+    	font-size: 8px;
+    }
+
+    h3 {
+    	font-size: 6px;
+    }
+
+
+
+    /* HEADER */
+
+    .top-nav {
+    	width: 100%;
+    }
+
+    .header-grid {
+    	display: grid;
+    	grid-template: auto / 3fr 1fr;
+    }
+
+
+
+    /* HERO */
+
+    .hero-bg {
+    	background: none;
+    	height: none;
+    	display: grid;
+    	grid-template: 1fr 1fr / auto;
+    }
+
+    .hero-mobile-img {
+    	object-fit: cover;
+    }
+
+    .hero-text-1 {
+    	padding: 0px;
+    	background-color: lightcyan;
+    }
+
+
+
+    /* ABOUT US */
+}
