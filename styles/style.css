@@ -12,6 +12,10 @@ body {
 	padding-bottom: 20px;
 }
 
+.padding-60 {
+	padding-bottom: 60px;
+}
+
 .hidden-desktop {
     display: none;
 }
@@ -74,7 +78,7 @@ nav li {
 button {
 	background: none;
 	border: none;
-	padding: none;
+	padding: 0px;
 	margin: none;
 	text-decoration: none;
 	text-decoration: underline;
@@ -85,9 +89,9 @@ button {
 
 .button-box {
 	text-decoration: none;
-	color: black;
+	color: white;
 	font-weight: 600;
-	background-color: #A2BFE4;
+	background-color: #04387C;
 	padding: 10px 30px;
 	border-radius: 100px;
 }
@@ -285,6 +289,7 @@ button {
 
 .footer-bg {
 	background-color: #000000;
+	margin-top: 20px;
 }
 
 .margin-footer {

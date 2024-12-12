@@ -9,6 +9,7 @@
 }
 
 .hero-text-1 {
+	padding-right: 600px;
 	padding-bottom: 90px;
 }
 
@@ -27,11 +28,11 @@
 /* FILTER */
 
 .shop-filter {
-	background-color: #A2BFE4;
+	background-color: #D9D9D9;
 	height: 272px;
 	border-radius: 20px;
 	margin-top: 60px;
-	padding: 0px 10px;
+	padding: 0px 0px 20px 10px;
 }
 
 .filter-header {

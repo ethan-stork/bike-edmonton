@@ -1,0 +1,142 @@
+/* NON-MOBILE */
+
+
+
+/* PHONE SCREEN */
+
+@media screen and (max-width: 480px) {
+
+
+
+	/* GLOBALS */
+
+	.hidden-mobile {
+        display: none;
+    }
+    .hidden-desktop {
+        display: flex;
+    }
+
+    .margin-default {
+        margin: 0 24px;
+    }
+
+    h1 {
+    	font-size: 44px;
+        font-weight: 800;
+        line-height: 1em;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    h2 {
+    	font-size: 16px;
+        font-weight: 600;
+        line-height: 1em;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 1em;
+    }
+
+
+    /* HEADER */
+
+    .top-nav {
+    	width: 100%;
+    }
+
+    .header-grid {
+    	display: grid;
+    	grid-template: auto / 3fr 1fr;
+    }
+
+
+
+    /* HERO */
+
+    .hero-bg {
+    	background: none;
+    	height: none;
+    	display: grid;
+    	grid-template: 1fr 1fr / auto;
+        margin-bottom: 100px;
+    }
+
+    .hero-mobile-img {
+    	object-fit: cover;
+    }
+
+    .hero-mobile-rectangle {
+        height: 12px;
+        width: 100px;
+        background-color: #04387C;
+        margin-top: 28px;
+    }
+
+    .hero-text-1 {
+        padding: 0px;
+        line-height: 1em;
+    }
+
+    .hero-text-2 {
+        line-height: 1;
+    }
+
+
+
+    /* BODY */
+
+    .mobile-section {
+        border-top: 4px solid #04387C;
+        display: grid;
+        grid-template: auto / 1fr;
+    }
+
+    .mobile-section-closed {
+        display: grid;
+        grid-template: auto / 10fr 1fr;
+        height: 60px;
+        align-content: center;
+        align-items: center;
+    }
+
+    .mobile-section-open {
+        display: grid;
+        grid-template: auto / 10fr 1fr;
+        height: 60px;
+        align-content: center;
+        align-items: center;
+        margin-bottom: -10px;
+    }
+
+    .mobile-section-closed-tall {
+        display: grid;
+        grid-template: auto / 10fr 1fr;
+        height: 90px;
+        align-content: center;
+        align-items: center;
+    }
+
+
+
+    /* FOOTER */
+
+    .footer-grid {
+        grid-template: 1fr 1fr / auto;
+    }
+
+    .socials {
+        display: grid;
+        grid-template: auto / repeat(5, 1fr);
+        grid-gap: 10px;
+        margin-top: 20px;
+    }
+
+    .footer-mobile-text {
+        justify-content: center;
+    }
+
+}

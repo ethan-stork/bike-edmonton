@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="styles/history.css">
+	<link rel="stylesheet" href="styles/history-mobile.css">
 
 	<!-- FONTS -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,8 +23,8 @@
 	
 
 
-	<!-- HEADER SECTION -->
-	<header>
+	<!-- HEADER DESKTOP SECTION -->
+	<header class="hidden-mobile">
 
 		<nav class="top-nav header-grid">
 			
@@ -52,13 +53,44 @@
 
 
 
+	<!-- HEADER MOBILE SECTION -->
+	<header class="hidden-desktop">
+
+		<nav class="top-nav header-grid">
+
+			<div class="BE-logo"><a href="index.html"><img width="80px" src="images/BE-logo.png"></a></div>
+
+			<div>
+				<svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M29.4446 28.7179L23.7049 22.9087C25.8451 20.48 27.1746 17.2636 27.1746 13.7518C27.1746 6.17026 21.0782 0 13.5873 0C6.09646 0 0 6.17026 0 13.7518C0 21.3333 6.09646 27.5036 13.5873 27.5036C16.2464 27.5036 18.7109 26.7159 20.7863 25.4031L26.7531 31.4421C27.1098 31.8031 27.5962 32 28.0826 32C28.5691 32 29.0555 31.8031 29.4122 31.4421C30.1904 30.6872 30.1904 29.4728 29.4446 28.7179ZM3.79407 13.7518C3.79407 8.30359 8.17185 3.84 13.5873 3.84C19.0028 3.84 23.3481 8.30359 23.3481 13.7518C23.3481 19.2 18.9704 23.6636 13.5873 23.6636C8.20428 23.6636 3.79407 19.2328 3.79407 13.7518Z" fill="white"/>
+				</svg>
+
+
+				<svg width="43" height="34" viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="0.888916" width="41.5556" height="5.03704" rx="2.51852" fill="white"/>
+					<rect x="0.888916" y="28.9629" width="41.5556" height="5.03704" rx="2.51852" fill="white"/>
+					<rect x="0.888916" y="15.1113" width="41.5556" height="5.03704" rx="2.51852" fill="white"/>
+				</svg>
+			</div>
+
+			
+		</nav>
+		
+	</header>
+
+
+
 	<!-- HERO SECTION -->
 	<section class="hero-bg">
 
+		<img class="hidden-desktop hero-mobile-img" width="412px" height="360px" src="images/BE-history-mobile.png">
+
+		<div class="hidden-desktop margin-default hero-mobile-rectangle"></div>
+
 		<div class="margin-default">
 			<h1 class="hero-text-1">Bike Edmonton’s History</h1>
-			<h2 class="hero-text-2">Supporting Edmontonian Bikers Since 1980.</h2>
-			<button><a href="#">Learn More About Our Services</a></button>
+			<h2 class="hero-text-2 hidden-mobile">Supporting Edmontonian Bikers Since 1980.</h2>
+			<button class="hidden-mobile"><a href="#">Learn More About Our Services</a></button>
 		</div>
 		
 	</section>
@@ -66,7 +98,7 @@
 
 
 	<!-- TIMELINE -->
-	<section class="margin-default">
+	<section class="margin-default hidden-mobile">
 
 		<div class="timeline-grid">
 
@@ -103,9 +135,12 @@
 	<!-- BODY CONTENT -->
 	<section class="margin-default">
 		
-		<div class="body-grid">
+
+
+		<!-- 1980s COMMUTERS SOCIETY -->
+		<div class="body-grid hidden-mobile">
 			
-			<div>
+			<div>					
 				<h3>Edmonton Bicycle Commuters Society</h3>
 				<p>In 1980, a group of like-minded, bicycle-commuting enthusiasts decided it was time to band together to encourage and help more people to get around Edmonton by bicycle. In August of that year, Bike Edmonton (then called Edmonton Bicycle Commuters Society, or EBC, and renamed in 2018) was officially born! The original idea was to promote cycling in Edmonton and encourage the City of Edmonton to seriously consider cycling in its transportation and urban planning.</p>
 			</div>
@@ -116,7 +151,19 @@
 
 		</div>
 
-		<div class="body-grid">
+		<!-- MOBILE -->
+		<div class="hidden-desktop">
+			<div class="body-header">
+				<h2 class="body-date">1980s</h2>
+				<h3>Edmonton Bicycle Commuters Society</h3>
+			</div>
+			<p class="body-p">In 1980, a group of like-minded, bicycle-commuting enthusiasts decided it was time to band together to encourage and help more people to get around Edmonton by bicycle. In August of that year, Bike Edmonton (then called Edmonton Bicycle Commuters Society, or EBC, and renamed in 2018) was officially born! The original idea was to promote cycling in Edmonton and encourage the City of Edmonton to seriously consider cycling in its transportation and urban planning.</p>
+		</div>
+
+
+
+		<!-- 1980s LUNAR CYCLE -->
+		<div class="body-grid  hidden-mobile">
 			
 			<div class="body-img-space">
 				<img class="body-img-left" width="600px" src="images/history-2.png">
@@ -130,7 +177,19 @@
 
 		</div>
 
-		<div class="body-grid">
+		<!-- MOBILE -->
+		<div class="hidden-desktop">
+			<div class="body-header">
+				<h2 class="body-date">1980s</h2>
+				<h3>Lunar Cycle</h3>
+			</div>
+			<p class="body-p">In the late 1980's, we launched a festival to celebrate the wondrous machine that is the bicycle! Lunar Cycle, which ran for six years before the main organizers moved on to bigger and better things, was a celebration of all things bike, and included events such as bike-to-work breakfasts, participation in the silly summer parade (with our lovely cow-on-a-bike mascot), advocacy outreach and many other events.</p>
+		</div>
+
+
+
+		<!-- 1990s RAILS TO TRAILS -->
+		<div class="body-grid  hidden-mobile">
 			
 			<div>
 				<h3>Rails To Trails</h3>
@@ -143,7 +202,19 @@
 
 		</div>
 
-		<div class="body-grid">
+		<!-- MOBILE -->
+		<div class="hidden-desktop">
+			<div class="body-header">
+				<h2 class="body-date">1990s</h2>
+				<h3>Rails To Trails</h3>
+			</div>
+			<p class="body-p">The Rails to Trails initiative was also developed in the 1990s by a core group of Bike Edmonton members. The vision of Rails to Trails was to convert unused rail corridors in the city into a network of multiuse trails for cyclists and pedestrians. While not as expansive as envisioned, what we advocated for has essentially been adopted by the City of Edmonton’s Ribbon of Steel project.</p>
+		</div>
+
+
+
+		<!-- 2000s RECYCLING -->
+		<div class="body-grid  hidden-mobile">
 			
 			<div class="body-img-space">
 				<img class="body-img-left" width="600px" src="images/history-4.png">
@@ -156,7 +227,19 @@
 
 		</div>
 
-		<div class="body-grid">
+		<!-- MOBILE -->
+		<div class="hidden-desktop">
+			<div class="body-header">
+				<h2 class="body-date">2000s</h2>
+				<h3>(Re)Cycling</h3>
+			</div>
+			<p class="body-p">Since our inception, we have been committed to reducing the environmental impact of bicycles past their prime. We continue to accept used bikes and strip them of parts that can still be used to stock our low-cost parts room. Non-salvageable parts and bikes are sent to be melted down and recycled. In 2006, we expanded our recycling program by partnering with the Alberta Recycling Management Authority, Mountain Equipment Coop, and a number of bike stores in Edmonton to pilot a project to collect and recycle bicycle tires.</p>
+		</div>
+
+
+
+		<!-- 2010s COMMUNITY BIKE WORKSHOPS -->
+		<div class="body-grid hidden-mobile">
 			
 			<div>
 				<h3>Community Bike Workshops</h3>
@@ -169,7 +252,19 @@
 
 		</div>
 
-		<div class="body-grid">
+		<!-- MOBILE -->
+		<div class="hidden-desktop">
+			<div class="body-header">
+				<h2 class="body-date">2010s</h2>
+				<h3>Community Bike Workshops</h3>
+			</div>
+			<p class="body-p">The many changes in the location of our community bicycle workshops (originally called BikeWorks) are also renowned among longstanding members. We started out on Jasper Avenue before moving to 107 Street and 85 Avenue, and then to someone’s car! The next actual building was a quonset hut between Calgary Trail North and South at University Ave. Our next location was a space over at the Tile factory in the same yard. That winter...</p>
+		</div>
+
+
+
+		<!-- 2010s BIKES ON BUSES -->
+		<div class="body-grid  hidden-mobile">
 			
 			<div class="body-img-space">
 				<img class="body-img-left" width="600px" src="images/history-6.png">
@@ -182,7 +277,20 @@
 
 		</div>
 
-		<div class="body-grid">
+		<!-- MOBILE -->
+		<div class="hidden-desktop">
+			<div class="body-header">
+				<h2 class="body-date">2010s</h2>
+				<h3>Bikes On Buses</h3>
+			</div>
+			<p class="body-p">The Bikes On Busses initiative—to encourage the city to equip Edmonton Transit buses with racks for bicycles—was started by former president Tooker Gomberg. We purchased, via a grant, bike racks for ETS to install on buses, providing half of the racks required for the initial bus routes involved in the pilot. The program has been operating since 1996 within the City of Edmonton, and in 2013 expanded to include all full-size ETS buses.</p>
+		</div>
+
+
+
+
+		<!-- 2020s KEEP RIDING -->
+		<div class="body-grid hidden-mobile">
 			
 			<div>
 				<h3>Keep Riding</h3>
@@ -200,11 +308,26 @@
 
 
 	<!-- LOOKING FORWARD -->
-	<section class="margin-default">
+	<section class="margin-default hidden-mobile">
 
 		<div class="looking-forward">
 			<h3>Looking Forward</h3>
 			<p>Our vision is a city where cycling is safe, widespread, and accessible to people of all comfort levels.</p>
+		</div>
+
+	</section>
+
+	<!-- MOBILE -->
+	<section class="hidden-desktop">
+
+		<div class="looking-forward">
+			<h3 class="hidden-mobile">Looking Forward</h3>
+			<p class="hidden-mobile">Our vision is a city where cycling is safe, widespread, and accessible to people of all comfort levels.</p>
+		</div>
+
+		<div class="margin-default">
+			<h3 class="looking-forward-title">Looking Forward</h3>
+			<p>Since 1980, Bike Edmonton has been proud to support cycling in Edmonton. Thanks to our committed supporters, members, volunteers, staff, and funders over the years, we have prevailed to become the group we are today: a mainstream organization making an impact on transportation choices in Edmonton. Our vision is a city where cycling is safe, widespread, and accessible to people of all comfort levels.</p>
 		</div>
 
 	</section>
@@ -217,7 +340,7 @@
 		<div class="footer-grid margin-footer">
 
 			<!-- LEFT SIDE -->
-			<div>
+			<div class="hidden-mobile">
 				<p>Terms of Service | Cookies</p>
 				<p>Home Page | About Us | Online Shop | Our Services | Bike Advice</p>
 			</div>
@@ -252,6 +375,10 @@
 					<path d="M30.4612 24.9995L21.6113 20.043V29.956L30.4612 24.9995Z" fill="white"/>
 				</svg>
 
+			</div>
+
+			<div class="hidden-desktop footer-mobile-text">
+				<p>Terms of Service | Cookies</p>
 			</div>
 
 		</div>

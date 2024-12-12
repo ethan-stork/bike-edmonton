@@ -19,9 +19,11 @@
 .timeline-grid {
 	display: grid;
 	grid-template: auto / 1fr 6fr;
+	height: 70px;
 	background-color: #04387C;
 	border-radius: 20px;
 	margin-top: 60px;
+	align-content: center;
 }
 
 .our-timeline {
@@ -73,7 +75,6 @@
 	padding-top: 1px;
 	padding-left: 40px;
 	margin: 100px 0px;
-
 }
 
 .looking-forward h3 {

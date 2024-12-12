@@ -5,5 +5,140 @@
 /* PHONE SCREEN */
 
 @media screen and (max-width: 480px) {
+
+	/* GLOBALS */
+
+	.hidden-mobile {
+        display: none;
+    }
+    .hidden-desktop {
+        display: grid;
+    }
+
+    .margin-default {
+        margin: 0 24px;
+    }
+
+    h1 {
+    	font-size: 44px;
+        font-weight: 800;
+        line-height: 1em;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    h2 {
+    	font-size: 22px;
+        font-weight: 600;
+        color: white;
+    }
+
+    h3 {
+    	font-size: 30px;
+    	font-weight: 800;
+    	line-height: 1em;
+    }
+
+
+
+    /* HEADER */
+
+    .top-nav {
+    	width: 100%;
+    }
+
+    .header-grid {
+    	display: grid;
+    	grid-template: auto / 3fr 1fr;
+    }
+
+
+
+    /* HERO */
+
+    .hero-bg {
+    	background: none;
+    	height: none;
+    	display: grid;
+    	grid-template: 1fr 1fr / auto;
+        margin-bottom: 100px;
+    }
+
+    .hero-mobile-img {
+    	object-fit: cover;
+    }
+
+    .hero-mobile-rectangle {
+        height: 12px;
+        width: 100px;
+        background-color: #04387C;
+        margin-top: 28px;
+    }
+
+    .hero-text-1 {
+    	padding-right: 0px;
+    }
+
+    .hero-text-2 {
+        line-height: 1;
+    }
+
+
+
+    /* BODY */
+
+    .body-header {
+    	display: grid;
+    	grid-template: auto / 1fr 4fr;
+    	grid-gap: 5px;
+    	align-content: center;
+    	align-items: center;
+    }
+
+    .body-date {
+    	background-color: #04387C;
+    	width: 70px;
+    	height: 70px;
+    	border-radius: 10px;
+    	align-content: center;
+    }
+
+    .body-p {
+    	margin-top: 0px;
+    }
+
+
+
+    /* LOOKING FORWARD */
+
+    .looking-forward {
+    border-radius: 0px;
+	height: 150px;
+	margin: 20px 0px 10px 0px;
+	}
+
+	.looking-forward-title {
+		font-size: 44px;
+		margin: 10px 0px;
+	}
+
+
+
+    /* FOOTER */
+
+    .footer-grid {
+        grid-template: 1fr 1fr / auto;
+    }
+
+    .socials {
+        display: grid;
+        grid-template: auto / repeat(5, 1fr);
+        grid-gap: 10px;
+        margin-top: 20px;
+    }
+
+    .footer-mobile-text {
+        justify-content: center;
+    }
 	
 }

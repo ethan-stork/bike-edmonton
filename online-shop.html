@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="styles/online-shop.css">
+	<link rel="stylesheet" href="styles/online-shop-mobile.css">
 
 	<!-- FONTS -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,8 +23,8 @@
 	
 
 
-	<!-- HEADER SECTION -->
-	<header>
+	<!-- HEADER DESKTOP SECTION -->
+	<header class="hidden-mobile">
 
 		<nav class="top-nav header-grid">
 			
@@ -52,13 +53,49 @@
 
 
 
+	<!-- HEADER MOBILE SECTION -->
+	<header class="hidden-desktop">
+
+		<nav class="top-nav header-grid">
+
+			<div class="BE-logo"><a href="index.html"><img width="80px" src="images/BE-logo.png"></a></div>
+
+			<div>
+				<svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M29.4446 28.7179L23.7049 22.9087C25.8451 20.48 27.1746 17.2636 27.1746 13.7518C27.1746 6.17026 21.0782 0 13.5873 0C6.09646 0 0 6.17026 0 13.7518C0 21.3333 6.09646 27.5036 13.5873 27.5036C16.2464 27.5036 18.7109 26.7159 20.7863 25.4031L26.7531 31.4421C27.1098 31.8031 27.5962 32 28.0826 32C28.5691 32 29.0555 31.8031 29.4122 31.4421C30.1904 30.6872 30.1904 29.4728 29.4446 28.7179ZM3.79407 13.7518C3.79407 8.30359 8.17185 3.84 13.5873 3.84C19.0028 3.84 23.3481 8.30359 23.3481 13.7518C23.3481 19.2 18.9704 23.6636 13.5873 23.6636C8.20428 23.6636 3.79407 19.2328 3.79407 13.7518Z" fill="white"/>
+				</svg>
+
+
+				<svg width="43" height="34" viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="0.888916" width="41.5556" height="5.03704" rx="2.51852" fill="white"/>
+					<rect x="0.888916" y="28.9629" width="41.5556" height="5.03704" rx="2.51852" fill="white"/>
+					<rect x="0.888916" y="15.1113" width="41.5556" height="5.03704" rx="2.51852" fill="white"/>
+				</svg>
+			</div>
+
+			
+		</nav>
+		
+	</header>
+
+
+
 	<!-- HERO SECTION -->
 	<section class="hero-bg">
 
+		<img class="hidden-desktop hero-mobile-img" width="412px" height="360px" src="images/BE-shop-mobile.png">
+
+		<div class="hidden-desktop margin-default hero-mobile-rectangle"></div>
+
 		<div class="margin-default">
-			<h1 class="hero-text-1">Bike Edmonton’s Online Shop</h1>
+
+			<h1 class="hidden-mobile hero-text-1">Bike Edmonton’s Online Shop</h1>
+
+			<h1 class="hidden-desktop">Online Shop</h1>
+
 			<h2 class="hero-text-2">All of our products are available online, and on-location.</h2>
-			<button><a href="#">Learn More About Our Physical Locations</a></button>
+			<button class="hidden-mobile"><a href="#">Learn More About Our Physical Locations</a></button>
+
 		</div>
 		
 	</section>
@@ -69,7 +106,7 @@
 	<section class=" margin-default shop-grid">
 		
 		<!-- FILTERS -->
-		<div class="shop-filter">
+		<div class="shop-filter hidden-mobile">
 			
 			<p class="filter-header">Filters</p>
 
@@ -117,7 +154,7 @@
 		<div>
 			
 			<!-- TITLE -->
-			<div class="items-header">
+			<div class="items-header hidden-mobile">
 
 				<h3>Parts & Bikes For Sale</h3>
 
@@ -131,6 +168,14 @@
 				</div>
 
 			</div>
+
+			<!-- MOBILE TITLE -->
+			<div class="hidden-desktop shop-title-grid">
+				<h1>All Items</h1>
+				<button class="filter-button">Filter</button>
+			</div>
+
+
 
 			<!-- ITEMS -->
 			<div class="items-grid">
@@ -303,7 +348,7 @@
 		<div class="footer-grid margin-footer">
 
 			<!-- LEFT SIDE -->
-			<div>
+			<div class="hidden-mobile">
 				<p>Terms of Service | Cookies</p>
 				<p>Home Page | About Us | Online Shop | Our Services | Bike Advice</p>
 			</div>
@@ -338,6 +383,10 @@
 					<path d="M30.4612 24.9995L21.6113 20.043V29.956L30.4612 24.9995Z" fill="white"/>
 				</svg>
 
+			</div>
+
+			<div class="hidden-desktop footer-mobile-text">
+				<p>Terms of Service | Cookies</p>
 			</div>
 
 		</div>
