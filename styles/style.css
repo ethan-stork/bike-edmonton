@@ -169,7 +169,7 @@ button {
 /* HERO */
 
 .hero-bg {
-	background-image: url("../images/be-home.png");
+	background-image: url("../images/BE-home.png");
 	background-size: cover;
     background-repeat: no-repeat;
     display: flex;
