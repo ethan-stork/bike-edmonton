@@ -101,11 +101,30 @@
 
 
 
+    /* NEWS */
+
+    .news-grid {
+        display: grid;
+        grid-template: auto auto / auto;
+        margin-top: 0px;
+    }
+
+    .article-grid {
+        height: 360px;
+    }
+
+    .meeting-text {
+        width: 340px;
+    }
+
+
+
     /* ABOUT US */
 
     .about-us-mobile {
         display: grid;
         grid-template: 1fr 1fr / auto;
+        margin-bottom: -140px;
     }
 
     .about-us-mobile div h1 {

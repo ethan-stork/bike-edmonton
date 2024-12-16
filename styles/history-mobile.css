@@ -85,6 +85,39 @@
 
 
 
+    /* TIMELINE */
+
+    .timeline-grid {
+		grid-template: auto / 1fr;
+		height: 80px;
+		border-radius: 10px;
+		margin-top: -20px;
+	}
+
+    .dates-grid {
+		grid-template: auto / repeat(5, 1fr);
+		grid-gap: 0px;
+		align-items: center;
+		align-content: center;
+	}
+
+    .timeline-dates {
+		color: black;
+		background: white;
+		height: 60px;
+		width: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-self: center;
+		font-weight: 700;
+		font-size: 18px;
+		border-radius: 10px;
+		margin-left: 5px;
+	}
+
+
+
     /* BODY */
 
     .body-header {
